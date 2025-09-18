@@ -1,0 +1,61 @@
+export const designSystem = {
+  colors: {
+    primary: "#4D7C0F",
+    primaryLight: "#84CC16",
+    primaryHover: "#5f8926",
+    primaryDark: "#4D7C0F",
+    secondary: "#DFF2BB",
+    secondaryHover: "#e1f3c0",
+    accent: "#F9FFEF",
+    background: "#FFFFFF",
+    background_green: "#FFFFFF",
+    surface: "#FFFFFF",
+    text: {
+      primary: "#000000",
+      secondary: "#4D7C0F",
+    },
+    white: "#FFFFFF",
+    black: "#000000",
+    success: "#4D7C0F",
+    warning: "#4D7C0F",
+    error: "#dc2626",
+    info: "#4D7C0F",
+  },
+  typography: {
+    fontFamily: "System",
+    h1: {
+      fontSize: 24,
+      fontWeight: "bold",
+      lineHeight: 32,
+    },
+    h2: {
+      fontSize: 20,
+      fontWeight: "bold",
+      lineHeight: 24,
+    },
+    h3: {
+      fontSize: 18,
+      fontWeight: "bold",
+      lineHeight: 24,
+    },
+    body: {
+      fontSize: 16,
+      fontWeight: "normal",
+      lineHeight: 22,
+    },
+  },
+  spacing: {
+    xs: 4,
+    sm: 8,
+    md: 16,
+    lg: 24,
+    xl: 32,
+    xxl: 48,
+  },
+  borderRadius: {
+    small: 4,
+    medium: 8,
+    large: 12,
+    xlarge: 16,
+  },
+};
