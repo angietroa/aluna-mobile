@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "MobileApp",
-    "slug": "MobileApp",
+    "name": "Aluna",
+    "slug": "Aluna",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -16,15 +16,18 @@
       "supportsTablet": true
     },
     "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      },
+      "icon": "./assets/icon.png",
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.angie_roa.Aluna"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "e05696d5-55b2-413a-a65b-03ac9185c8e5"
+      }
     }
   }
 }
