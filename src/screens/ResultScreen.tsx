@@ -20,17 +20,26 @@ const ResultScreen = ({ navigation }: any) => {
           <Text style={styles.title}>Resultado de tu sesión</Text>
 
           <View style={styles.subtitleContainer}>
-            <SvgXml xml={iaXml} width={28} height={28} style={styles.iaIcon} />
+            <View style={styles.iconContainer}>
+              <SvgXml
+                xml={iaXml}
+                width={28}
+                height={28}
+                style={styles.iaIcon}
+              />
+            </View>
             <Text style={styles.subtitle}>Hoy sonaste mas calmado</Text>
           </View>
 
           <View style={styles.improvementContainer}>
-            <SvgXml
-              xml={upArrowXml}
-              width={24}
-              height={24}
-              style={styles.upArrowIcon}
-            />
+            <View style={styles.iconContainer}>
+              <SvgXml
+                xml={upArrowXml}
+                width={24}
+                height={24}
+                style={styles.upArrowIcon}
+              />
+            </View>
             <Text style={styles.improvementText}>Tu estado mejoro un 20%</Text>
           </View>
 
@@ -85,15 +94,22 @@ const styles = StyleSheet.create({
     justifyContent: "flex-start",
     marginBottom: 9,
   },
+  iconContainer: {
+    width: 32,
+    height: 28,
+    justifyContent: "center",
+    alignItems: "center",
+    marginRight: 8,
+  },
   subtitle: {
     fontSize: designSystem.typography.body.fontSize,
     fontWeight: designSystem.typography.body.fontWeight as any,
     lineHeight: designSystem.typography.body.lineHeight,
     color: designSystem.colors.text.primary,
-    marginLeft: 0,
+    flex: 1,
   },
   iaIcon: {
-    marginRight: 3,
+    // El icono se centra automáticamente en su contenedor
   },
   improvementContainer: {
     flexDirection: "row",
@@ -106,12 +122,10 @@ const styles = StyleSheet.create({
     fontWeight: designSystem.typography.body.fontWeight as any,
     lineHeight: designSystem.typography.body.lineHeight,
     color: designSystem.colors.text.primary,
-    marginLeft: 0,
-    alignSelf: "center",
+    flex: 1,
   },
   upArrowIcon: {
-    marginRight: 3,
-    alignSelf: "center",
+    // El icono se centra automáticamente en su contenedor
   },
   exitButtonContainer: {
     marginTop: "auto",

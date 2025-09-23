@@ -39,7 +39,7 @@ export const designSystem = {
       lineHeight: 24,
     },
     body: {
-      fontSize: 16,
+      fontSize: 18,
       fontWeight: "normal",
       lineHeight: 22,
     },
